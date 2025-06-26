@@ -63,7 +63,7 @@ src/
 │           └── index.ts
 ├── infrastructure/                 # Infrastructure Layer
 │   ├── repositories/               # Repository implementations
-│   │   ├── file-counter.repository.ts
+│   │   ├── prisma-counter.repository.ts
 │   │   └── index.ts
 │   └── di/                         # Dependency Injection
 │       ├── container.ts            # DI container

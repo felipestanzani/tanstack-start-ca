@@ -50,15 +50,25 @@ A modern boilerplate for building full-stack React applications with TanStack St
 
 3. **Set up environment variables:**
 
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
+   Create a `.env` file in the root directory with the following content:
+
+   ```env
+   # Database
+   DATABASE_URL="file:./dev.db"
    ```
 
 4. **Set up the database:**
+
+   Generate the Prisma client from the schema:
+
    ```bash
-   npx prisma generate
-   npx prisma db push
+   npm run db:generate
+   ```
+
+   Create the SQLite database and apply the schema:
+
+   ```bash
+   npm run db:push
    ```
 
 ## 🚀 Development
@@ -73,15 +83,30 @@ The application will be available at `http://localhost:3000`
 
 ### Available Scripts
 
+#### Development
+
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
+
+#### Code Quality
+
 - `npm run lint` - Run ESLint
 - `npm run format` - Format code with Prettier
+
+#### Testing
+
 - `npm test` - Run tests with Vitest
 - `npm run test:run` - Run tests once
 - `npm run test:watch` - Run tests in watch mode
 - `npm run test:coverage` - Run tests with coverage
+
+#### Database
+
+- `npm run db:generate` - Generate Prisma client
+- `npm run db:push` - Push schema changes to database
+- `npm run db:migrate` - Create and apply migrations
+- `npm run db:studio` - Open Prisma Studio for database management
 
 ## 🏗️ Clean Architecture Structure
 
@@ -121,7 +146,7 @@ tanstack-start-clean-architecture/
 │   │   │   ├── container.ts        # DI container
 │   │   │   └── index.ts
 │   │   └── repositories/           # Repository implementations
-│   │       ├── file-counter.repository.ts
+│   │       ├── prisma-counter.repository.ts
 │   │       └── index.ts
 │   ├── presentation/               # 🟪 Presentation Layer
 │   │   └── controllers/            # HTTP request handlers
@@ -210,6 +235,35 @@ src/tests/
 - **Integration Tests**: Testing layer interactions
 - **End-to-End Tests**: Testing complete user workflows
 
+## 🗄️ Database
+
+This project uses **SQLite** with **Prisma** for data persistence.
+
+### Database Schema
+
+The application uses a simple `Counter` table with the following structure:
+
+```prisma
+model Counter {
+  id        String   @id
+  value     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+```
+
+### Repository Implementation
+
+The counter persistence uses database storage (`PrismaCounterRepository`):
+
+- Implements the `CounterRepository` interface
+- Uses SQLite for data persistence
+- Supports the default counter with automatic creation
+- Handles upsert operations for counter updates
+- Maintains full compatibility with existing use cases
+
+_Note: The Prisma client is generated to the standard location (`node_modules/@prisma/client`) for better ES module compatibility with Vite/TanStack Start._
+
 ## 🎯 Features
 
 This boilerplate includes:
@@ -217,7 +271,7 @@ This boilerplate includes:
 - ✅ **Clean Architecture** implementation
 - ✅ **Type-safe routing** with TanStack Router
 - ✅ **Server-side rendering** with TanStack Start
-- ✅ **Database integration** with Prisma
+- ✅ **Database integration** with Prisma + SQLite
 - ✅ **UI components** with shadcn/ui
 - ✅ **Testing setup** with Vitest
 - ✅ **Code quality** with ESLint and Prettier

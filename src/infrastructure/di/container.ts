@@ -3,7 +3,8 @@ import {
   GetCounterUseCase,
   IncrementCounterUseCase,
 } from "@/core/application/use-cases";
-import { FileCounterRepository } from "@/infrastructure/repositories";
+import { PrismaCounterRepository } from "@/infrastructure/repositories";
+import { prisma } from "@/infrastructure/prisma/client";
 
 export interface Dependencies {
   counterRepository: CounterRepository;
@@ -16,7 +17,7 @@ class DIContainer {
 
   constructor() {
     // Infrastructure layer
-    const counterRepository = new FileCounterRepository();
+    const counterRepository = new PrismaCounterRepository(prisma);
 
     // Application layer
     const getCounterUseCase = new GetCounterUseCase(counterRepository);

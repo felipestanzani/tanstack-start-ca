@@ -39,6 +39,9 @@ jspm_packages/
 # TypeScript cache
 *.tsbuildinfo
 
+# Prisma
+prisma/dev.db
+
 # Optional npm cache directory
 .npm
 

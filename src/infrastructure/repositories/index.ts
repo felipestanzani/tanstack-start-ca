@@ -1,2 +1,2 @@
 // Infrastructure repositories barrel file
-export * from "@/infrastructure/repositories/file-counter.repository";
+export * from "@/infrastructure/repositories/prisma-counter.repository";

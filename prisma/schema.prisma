@@ -3,10 +3,16 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
   provider = "sqlite"
   url      = env("DATABASE_URL")
+}
+
+model Counter {
+  id        String   @id
+  value     Int      @default(0)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
