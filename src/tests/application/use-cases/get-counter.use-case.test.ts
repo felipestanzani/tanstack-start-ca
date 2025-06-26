@@ -1,7 +1,7 @@
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import { GetCounterUseCase } from "../../../core/application/use-cases";
-import { Counter } from "../../../core/domain/entities";
-import { CounterRepository } from "../../../core/domain/repositories";
+import { GetCounterUseCase } from "@/core/application/use-cases";
+import { Counter } from "@/core/domain/entities";
+import { CounterRepository } from "@/core/domain/repositories";
 
 describe("GetCounterUseCase", () => {
   let mockRepository: CounterRepository;

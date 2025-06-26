@@ -1,2 +1,2 @@
 // Domain repositories barrel file
-export * from "./counter.repository";
+export * from "@/core/domain/repositories/counter.repository";

@@ -1,9 +1,9 @@
-import { CounterRepository } from "../../core/domain/repositories";
+import { CounterRepository } from "@/core/domain/repositories";
 import {
   GetCounterUseCase,
   IncrementCounterUseCase,
-} from "../../core/application/use-cases";
-import { FileCounterRepository } from "../repositories";
+} from "@/core/application/use-cases";
+import { FileCounterRepository } from "@/infrastructure/repositories";
 
 export interface Dependencies {
   counterRepository: CounterRepository;

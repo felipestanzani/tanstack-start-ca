@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { Counter } from "../../../core/domain/entities";
+import { Counter } from "@/core/domain/entities";
 
 describe("Counter Entity", () => {
   it("should create a counter with initial value", () => {

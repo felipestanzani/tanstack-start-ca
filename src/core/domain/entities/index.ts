@@ -1,3 +1,3 @@
 // Domain entities barrel file
-export * from "./base.entity";
-export * from "./counter.entity";
+export * from "@/core/domain/entities/base.entity";
+export * from "@/core/domain/entities/counter.entity";

@@ -1,6 +1,6 @@
 import * as fs from "node:fs";
-import { Counter } from "../../core/domain/entities";
-import { CounterRepository } from "../../core/domain/repositories";
+import { Counter } from "@/core/domain/entities";
+import { CounterRepository } from "@/core/domain/repositories";
 
 export class FileCounterRepository implements CounterRepository {
   private readonly filePath: string;

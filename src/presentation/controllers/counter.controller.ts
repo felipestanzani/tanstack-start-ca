@@ -1,5 +1,5 @@
 import { createServerFn } from "@tanstack/react-start";
-import { container } from "../../infrastructure/di";
+import { container } from "@/infrastructure/di";
 
 export const getCounter = createServerFn({
   method: "GET",

@@ -1,5 +1,5 @@
-import { Counter } from "../../../domain/entities";
-import { CounterRepository } from "../../../domain/repositories";
+import { Counter } from "@/core/domain/entities";
+import { CounterRepository } from "@/core/domain/repositories";
 
 export interface IncrementCounterRequest {
   counterId?: string;

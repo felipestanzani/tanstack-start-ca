@@ -1,2 +1,2 @@
 // Dependency injection barrel file
-export * from "./container";
+export * from "@/infrastructure/di/container";

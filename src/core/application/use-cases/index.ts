@@ -1,2 +1,2 @@
 // Application use cases barrel file
-export * from "./counter";
+export * from "@/core/application/use-cases/counter";

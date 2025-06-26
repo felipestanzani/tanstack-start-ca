@@ -1,4 +1,4 @@
-import { BaseEntity } from "./base.entity";
+import { BaseEntity } from "@/core/domain/entities/base.entity";
 
 export interface CounterProps {
   id: string;
