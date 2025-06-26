@@ -1,0 +1,60 @@
+{
+  "name": "tanstack-start-clean-architecture",
+  "version": "1.0.0",
+  "description": "A TanStack Start boilerplate implementing Clean Architecture principles for maintainable, testable, and scalable React applications.",
+  "main": "index.js",
+  "keywords": [
+    "tanstack",
+    "react",
+    "clean-architecture",
+    "typescript",
+    "boilerplate"
+  ],
+  "author": "Felipe Stanzani <stanzani@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
+    "@tailwindcss/vite": "^4.1.11",
+    "@tanstack/react-router": "^1.121.34",
+    "@tanstack/react-start": "^1.121.38",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.523.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.11",
+    "vite": "^7.0.0",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@eslint/css": "^0.9.0",
+    "@eslint/js": "^9.29.0",
+    "@eslint/json": "^0.12.0",
+    "@eslint/markdown": "^6.6.0",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "eslint": "^9.29.0",
+    "eslint-config-molindo": "^8.0.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.2.0",
+    "jsdom": "^26.1.0",
+    "prettier": "3.6.1",
+    "prisma": "^6.10.1",
+    "tw-animate-css": "^1.3.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.0",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vitest": "^3.2.4"
+  }
+}

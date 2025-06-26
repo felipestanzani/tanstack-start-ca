@@ -1,0 +1,48 @@
+{
+  "cSpell.words": [
+    "Allday",
+    "alldaycare",
+    "arima",
+    "consts",
+    "daycares",
+    "Dismissable",
+    "esnext",
+    "firefox",
+    "formatjs",
+    "hookform",
+    "jose",
+    "NEXTAUTH",
+    "oklch",
+    "pangea",
+    "signup",
+    "Signup",
+    "sonner",
+    "stringbool",
+    "svgr",
+    "tailwindcss",
+    "toastify",
+    "tseslint"
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss",
+    "*.scss": "tailwindcss"
+  },
+  "cSpell.enabledFileTypes": {
+    "*": true,
+    "markdown": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "vscode_custom_css.imports": [
+    "file:///Users/Stanzani/Documents/pretty-ts-errors-hack.css"
+  ],
+  "postman.settings.dotenv-detection-notification-visibility": false,
+  "sonarlint.connectedMode.project": {
+    "connectionId": "allday-care",
+    "projectKey": "AllDay-Care_web"
+  },
+  "i18n-ally.localesPaths": ["src/i18n", "src/i18n/messages"]
+}
