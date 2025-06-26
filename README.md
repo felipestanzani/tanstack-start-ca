@@ -38,8 +38,8 @@ A modern boilerplate for building full-stack React applications with TanStack St
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
-   cd tanstack-start-clean-architecture
+   git clone git@github.com:felipestanzani/tanstack-start-ca.git
+   cd tanstack-start-ca
    ```
 
 2. **Install dependencies:**
