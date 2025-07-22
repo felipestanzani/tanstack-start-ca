@@ -10,3 +10,5 @@ global.console = {
   warn: vi.fn(),
   error: vi.fn(),
 };
+
+// Note: For controller tests, consider mocking the DI container globally if needed.
