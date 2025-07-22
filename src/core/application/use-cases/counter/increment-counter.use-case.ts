@@ -10,7 +10,11 @@ export interface IncrementCounterResponse {
   counter: Counter;
 }
 
-export class IncrementCounterUseCase {
+export interface IIncrementCounterUseCase {
+  execute(request?: IncrementCounterRequest): Promise<IncrementCounterResponse>;
+}
+
+export class IncrementCounterUseCase implements IIncrementCounterUseCase {
   constructor(private readonly counterRepository: CounterRepository) {}
 
   async execute(

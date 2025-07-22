@@ -9,7 +9,11 @@ export interface GetCounterResponse {
   counter: Counter;
 }
 
-export class GetCounterUseCase {
+export interface IGetCounterUseCase {
+  execute(request?: GetCounterRequest): Promise<GetCounterResponse>;
+}
+
+export class GetCounterUseCase implements IGetCounterUseCase {
   constructor(private readonly counterRepository: CounterRepository) {}
 
   async execute(request: GetCounterRequest = {}): Promise<GetCounterResponse> {

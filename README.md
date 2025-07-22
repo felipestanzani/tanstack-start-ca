@@ -31,7 +31,7 @@ A modern boilerplate for building full-stack React applications with TanStack St
 ## 📋 Prerequisites
 
 - **Node.js** (version 18 or higher)
-- **npm** or **yarn** or **pnpm**
+- **pnpm** or **yarn** or **pnpm**
 
 ## 🛠️ Installation
 
@@ -45,7 +45,7 @@ A modern boilerplate for building full-stack React applications with TanStack St
 2. **Install dependencies:**
 
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. **Set up environment variables:**
@@ -62,13 +62,13 @@ A modern boilerplate for building full-stack React applications with TanStack St
    Generate the Prisma client from the schema:
 
    ```bash
-   npm run db:generate
+   pnpm db:generate
    ```
 
    Create the SQLite database and apply the schema:
 
    ```bash
-   npm run db:push
+   pnpm db:push
    ```
 
 ## 🚀 Development
@@ -76,7 +76,7 @@ A modern boilerplate for building full-stack React applications with TanStack St
 ### Start the development server:
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 The application will be available at `http://localhost:3000`
@@ -85,28 +85,28 @@ The application will be available at `http://localhost:3000`
 
 #### Development
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
+- `pnpm dev` - Start development server
+- `pnpm build` - Build for production
+- `pnpm preview` - Preview production build
 
 #### Code Quality
 
-- `npm run lint` - Run ESLint
-- `npm run format` - Format code with Prettier
+- `pnpm lint` - Run ESLint
+- `pnpm format` - Format code with Prettier
 
 #### Testing
 
-- `npm test` - Run tests with Vitest
-- `npm run test:run` - Run tests once
-- `npm run test:watch` - Run tests in watch mode
-- `npm run test:coverage` - Run tests with coverage
+- `pnpm test` - Run tests with Vitest
+- `pnpm test:run` - Run tests once
+- `pnpm test:watch` - Run tests in watch mode
+- `pnpm test:coverage` - Run tests with coverage
 
 #### Database
 
-- `npm run db:generate` - Generate Prisma client
-- `npm run db:push` - Push schema changes to database
-- `npm run db:migrate` - Create and apply migrations
-- `npm run db:studio` - Open Prisma Studio for database management
+- `pnpm db:generate` - Generate Prisma client
+- `pnpm db:push` - Push schema changes to database
+- `pnpm db:migrate` - Create and apply migrations
+- `pnpm db:studio` - Open Prisma Studio for database management
 
 ## 🏗️ Clean Architecture Structure
 

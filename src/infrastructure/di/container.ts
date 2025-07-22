@@ -3,13 +3,17 @@ import {
   GetCounterUseCase,
   IncrementCounterUseCase,
 } from "@/core/application/use-cases";
+import type {
+  IGetCounterUseCase,
+  IIncrementCounterUseCase,
+} from "@/core/application/use-cases/counter";
 import { PrismaCounterRepository } from "@/infrastructure/repositories";
 import { prisma } from "@/infrastructure/prisma/client";
 
 export interface Dependencies {
   counterRepository: CounterRepository;
-  getCounterUseCase: GetCounterUseCase;
-  incrementCounterUseCase: IncrementCounterUseCase;
+  getCounterUseCase: IGetCounterUseCase;
+  incrementCounterUseCase: IIncrementCounterUseCase;
 }
 
 class DIContainer {
@@ -40,11 +44,11 @@ class DIContainer {
     return this.dependencies.counterRepository;
   }
 
-  getCounterUseCase(): GetCounterUseCase {
+  getCounterUseCase(): IGetCounterUseCase {
     return this.dependencies.getCounterUseCase;
   }
 
-  getIncrementCounterUseCase(): IncrementCounterUseCase {
+  getIncrementCounterUseCase(): IIncrementCounterUseCase {
     return this.dependencies.incrementCounterUseCase;
   }
 }
