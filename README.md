@@ -264,6 +264,43 @@ The counter persistence uses database storage (`PrismaCounterRepository`):
 
 _Note: The Prisma client is generated to the standard location (`node_modules/@prisma/client`) for better ES module compatibility with Vite/TanStack Start._
 
+## ⚡ State Management with TanStack Query
+
+This project uses **TanStack Query** for all client-server state synchronization and UI data fetching. Benefits include:
+
+- **Automatic caching** and background updates
+- **Optimistic UI** for instant feedback on mutations
+- **Error handling** and retry logic out of the box
+- **DevTools** for query/mutation debugging
+
+### Query Setup
+
+- The `QueryClient` is configured in [`src/lib/query-client.ts`](src/lib/query-client.ts) and provided at the root via `QueryClientProvider` in [`src/routes/__root.tsx`](src/routes/__root.tsx).
+- React Query DevTools are enabled in development for easy debugging.
+
+### Custom Hooks
+
+- `useCounter()` — Fetches the current counter value
+- `useIncrementCounter()` — Increments the counter (with optimistic update)
+
+See [`src/hooks/use-counter.ts`](src/hooks/use-counter.ts) for implementation details.
+
+### Example Usage (Home Page)
+
+The home page demonstrates:
+
+- **Live counter value** with auto-refresh
+- **Increment button** with instant UI feedback
+- **Loading and error states**
+- **Optimistic updates** for a snappy user experience
+
+## 🆕 Counter Feature Demo
+
+- Increment the counter with instant feedback
+- UI disables button during loading/mutation
+- Error messages and retry options for failed requests
+- Powered by TanStack Query hooks and server functions
+
 ## 🎯 Features
 
 This boilerplate includes:
@@ -277,6 +314,9 @@ This boilerplate includes:
 - ✅ **Code quality** with ESLint and Prettier
 - ✅ **Dependency injection** container
 - ✅ **Example counter feature** demonstrating architecture
+- ✅ **State management with TanStack Query** (caching, mutations, optimistic updates)
+- ✅ **React Query DevTools** for development
+- ✅ **Increment counter with optimistic UI**
 
 ## 📚 Learn More
 

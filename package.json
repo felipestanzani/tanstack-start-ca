@@ -1,6 +1,6 @@
 {
   "name": "tanstack-start-clean-architecture",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TanStack Start boilerplate implementing Clean Architecture principles for maintainable, testable, and scalable React applications.",
   "main": "index.js",
   "keywords": [
@@ -29,6 +29,8 @@
     "@prisma/client": "^6.12.0",
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/vite": "^4.1.11",
+    "@tanstack/react-query": "^5.83.0",
+    "@tanstack/react-query-devtools": "^5.83.0",
     "@tanstack/react-router": "^1.129.5",
     "@tanstack/react-start": "^1.129.5",
     "class-variance-authority": "^0.7.1",
