@@ -6,10 +6,10 @@ A modern boilerplate for building full-stack React applications with TanStack St
 
 ### Frontend
 
-- **React 19.1.0** with TypeScript
-- **TanStack Start** - Full-stack React framework
-- **TanStack Router** - Type-safe file-based routing
-- **Tailwind CSS 4.1.11** - Utility-first CSS framework
+- **React 19.1.1** with TypeScript
+- **TanStack Start 1.132.19** - Full-stack React framework
+- **TanStack Router 1.132.19** - Type-safe file-based routing
+- **Tailwind CSS 4.1.13** - Utility-first CSS framework
 - **shadcn/ui** - High-quality accessible component library
 - **Radix UI** - Primitive components for complex UI
 - **Lucide React** - Beautiful icon library
@@ -22,8 +22,8 @@ A modern boilerplate for building full-stack React applications with TanStack St
 
 ### Development Tools
 
-- **Vite 7.0.0** - Lightning-fast build tool
-- **TypeScript 5.8.3** - Type safety and enhanced DX
+- **Vite 7.1.7** - Lightning-fast build tool
+- **TypeScript 5.9.2** - Type safety and enhanced DX
 - **ESLint** - Code linting with comprehensive presets
 - **Prettier** - Code formatting
 - **Vitest** - Fast unit testing framework

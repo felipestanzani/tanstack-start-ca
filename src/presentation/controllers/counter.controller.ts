@@ -6,5 +6,5 @@ export const getCounter = createServerFn({
 }).handler(getCounterHandler);
 
 export const incrementCounter = createServerFn({ method: "POST" })
-  .validator((amount: number) => amount)
+  .inputValidator((amount: number) => amount)
   .handler(({ data: amount }) => incrementCounterHandler(amount));
